@@ -1,1 +1,2 @@
-console.log("moo!")
+let name = "tux"
+console.log(`moo, ${name}!`)
