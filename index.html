@@ -43,15 +43,24 @@
       }
 
       function tick() {
-        // ?
+        if (countdown === 0) {
+            countdown = 300;
+            clicks = 0;
+        } else {
+            countdown--;
+        }
+        updateUI();
       }
 
       function onClick() {
-        // ?
+        clicks++;
+        updateUI();
       }
 
       function onStart() {
-        // ?
+        document.getElementById("clickButton").disabled = false;
+        document.getElementById("startButton").disabled = true;
+        setInterval(tick, 1000);
       }
 
       document.getElementById("startButton").addEventListener("click", onStart);
