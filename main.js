@@ -1,4 +1,7 @@
-const { moo } = require("./moo.js");
+import { moo } from "./moo.js";
+import { say } from "cowsay";
+
 let name = "tux"
-cowsay = moo(name);
-console.log(cowsay)
+const cs = say({text: moo(name)});
+
+console.log(cs)
