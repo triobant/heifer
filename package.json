@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js"
+    "build": "vite build",
+    "start": "node dist/heifer.js"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +13,11 @@
   "devDependencies": {
     "@babel/cli": "^7.27.2",
     "@babel/core": "^7.27.4",
-    "@babel/preset-env": "^7.27.2"
+    "@babel/preset-env": "^7.27.2",
+    "vite": "^6.3.5"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "cowsay": "^1.6.0"
+  }
 }
